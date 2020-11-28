@@ -2,6 +2,33 @@
 
 ## [Unreleased]
 
+## [v8.1.1] - 2020-11-21
+
+- Implement case insensitive function-based unique index. [#599]
+
+## [v8.1.0] - 2020-11-20
+
+- Enable oracle case insensitive searches. [#598]
+- Fix database presence validation issue (unique, exists, etc).
+- Removes the dependency on OracleUserProvider.
+
+## [v8.0.1] - 2020-09-23
+
+- Fix [#590] WhereIn query with more than 2k++ records. [#591], credits to [@bioleyl].
+
+## [v8.0.0] - 2020-09-09
+
+- Add support for Laravel 8.
+
+## [v7.0.1] - 2020-06-18
+
+- Fix pagination aggregate count. [#570]
+
+## [v7.0.0] - 2020-03-04
+
+- Add support for Laravel 7 [#565].
+- Fix [#564].
+
 ## [v6.1.0] - 2020-02-11
 
 - Add support for joinSub. [#551], credits to [@mozgovoyandrey].
@@ -81,7 +108,13 @@
 - Fix [#406], [#404].
 - Added more options to Sequence Create Method [#355], credits to [@nikklass].
 
-[Unreleased]: https://github.com/yajra/laravel-oci8/compare/v6.1.0...5.8
+[Unreleased]: https://github.com/yajra/laravel-oci8/compare/v8.1.1...7.x
+[v8.1.1]: https://github.com/yajra/laravel-oci8/compare/v8.1.0...v8.1.1
+[v8.1.0]: https://github.com/yajra/laravel-oci8/compare/v8.0.0...v8.1.0
+[v8.0.1]: https://github.com/yajra/laravel-oci8/compare/v8.0.0...v8.0.1
+[v8.0.0]: https://github.com/yajra/laravel-oci8/compare/v7.0.1...v8.0.0
+[v7.0.1]: https://github.com/yajra/laravel-oci8/compare/v7.0.0...v7.0.1
+[v7.0.0]: https://github.com/yajra/laravel-oci8/compare/v6.1.0...v7.0.0
 [v6.1.0]: https://github.com/yajra/laravel-oci8/compare/v6.0.4...v6.1.0
 [v6.0.4]: https://github.com/yajra/laravel-oci8/compare/v6.0.3...v6.0.4
 [v6.0.3]: https://github.com/yajra/laravel-oci8/compare/v6.0.2...v6.0.3
@@ -122,7 +155,14 @@
 [#535]: https://github.com/yajra/laravel-oci8/pull/535
 [#551]: https://github.com/yajra/laravel-oci8/pull/551
 [#560]: https://github.com/yajra/laravel-oci8/pull/560
+[#565]: https://github.com/yajra/laravel-oci8/pull/565
+[#570]: https://github.com/yajra/laravel-oci8/pull/570
+[#591]: https://github.com/yajra/laravel-oci8/pull/591
+[#598]: https://github.com/yajra/laravel-oci8/pull/598
+[#599]: https://github.com/yajra/laravel-oci8/pull/599
 
+[#590]: https://github.com/yajra/laravel-oci8/issue/590
+[#564]: https://github.com/yajra/laravel-oci8/issue/564
 [#523]: https://github.com/yajra/laravel-oci8/issue/523
 [#413]: https://github.com/yajra/laravel-oci8/issue/413
 [#406]: https://github.com/yajra/laravel-oci8/issue/406
@@ -145,3 +185,4 @@
 [@dantesCode]: https://github.com/dantesCode
 [@jeidison]: https://github.com/jeidison
 [@mozgovoyandrey]: https://github.com/mozgovoyandrey
+[@bioleyl]: https://github.com/bioleyl
